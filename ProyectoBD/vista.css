@@ -1,0 +1,186 @@
+.container-fluid{
+    padding: 0%;
+    
+}
+.index{
+    background: url(./img/fondo1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.formularios-i-r{
+    background: url(./img/fondo3.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.modulos{
+    background: url(./img/fondo2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.user-img{
+    margin-top: -110px;
+    margin-bottom: 35px;
+}
+
+.user-img img{
+    height: 100px;
+    width: 100px;
+}
+
+.main-section{
+    margin-top: 40%;
+
+}
+.register-section{
+    margin-top: 15%;
+}
+.modules-section{
+    margin-top: 10%;
+}
+
+.modal-content{
+background-color: #1716167a;
+padding-bottom: 10px;
+box-shadow: 0px 0px 3px darkgray;
+border-radius: 5px;
+}
+
+.redirecciones{
+    color: white;
+}
+.redirecciones:hover{
+    color: whitesmoke;
+}
+
+.bg-dark{
+    background-color: #2d2d2d !important;
+}
+
+.label-register{
+    color: white;
+    text-align: left !important;
+}
+
+.button_drop{
+    background-color: #ffffff00 !important;
+    border-color: #ffffff00 !important;
+}
+.button_drop:hover{
+    background-color: #52505057 !important;
+}
+
+.dropdown-menu{
+    margin-left: -70px;
+}
+/*ctrl + shif + r*/
+
+.divs_facturacion{
+    margin-top: 15px !important;
+    
+}
+
+.tarjetas{
+    background-color: #373535c7;
+    color: white;
+}
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+
+.body-pro
+{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.container-pro
+{
+    position: absolute;
+    max-width: 800px;
+    padding: 50px;
+    background: rgb(0 0 0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+.container-pro .title
+{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+.container-pro .title::before
+{   
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 700px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #000000, #8f8f8f);
+}
+.container-pro form .user-details
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:20px 0 12px 0;
+}
+form .user-details .input-box
+{
+    width: calc(100% / 2 - 20px); 
+    margin-bottom: 15px;
+}
+.user-details .input-box .deatails
+{
+    display: block;
+    font-size: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input
+{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid
+{
+    border-color: #000000
+}
+form .button
+{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input
+{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    
+}
+form .button input:hover
+{
+    background: linear-gradient(-135deg, #000000, #8f8f8f);
+}
+.input-box .details
+{
+    color:white;
+}

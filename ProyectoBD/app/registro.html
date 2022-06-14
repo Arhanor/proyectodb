@@ -1,0 +1,95 @@
+<div class="container-fluid">
+    <div class="modal-dialog">
+        <div class="row justify-content-md-center">
+            <div class="col-12 register-section">
+                <div class="modal-content" style="padding: 10px;">
+                    <form action="" method="POST" enctype="multipart/form-data">
+                        <div class="form-row">
+                            <div class="form-group col-md-6" id="documento">
+                                <label class="label-register" for="documento">Número de documento</label>
+                                <input type="text" id="documento" name="documento" class="form-control" placeholder="" required>
+                            </div>
+                            <div class="form-group col-md-6" id="registro-nombre">
+                                <label class="label-register" for="nombres">Nombres</label>
+                                <input type="text" id="nombres" name="nombres" class="form-control" placeholder="" required>
+                            </div>
+                            <div class="form-group col-md-6" id="registro-apellidos">
+                                <label class="label-register" for="apellidos">Apellidos</label>
+                                <input type="text" id="apellidos" name="apellidos" class="form-control" placeholder="" required>
+                            </div>
+                            <div class="form-group col-md-6" id="usuario">
+                                <label class="label-register" for="conContrasena">Nombre de Usuario</label>
+                                <input type="text" id="usuario" name="usuario" class="form-control" placeholder="usuario" required>
+                            </div>
+                            <div class="form-group col-md-6" id="registro-contrasena">
+                                <label class="label-register" for="contrasena">Contraseña</label>
+                                <input type="password" id="contrasena" name="contrasena" class="form-control" placeholder="" required>
+                            </div>
+                            <div class="form-group col-md-6" id="registro-conContrasena">
+                                <label class="label-register" for="conContrasena">Confirmar Contraseña</label>
+                                <input type="password" id="conContrasena" name="conContrasena" class="form-control" placeholder="Repite la contraseña" required>
+                            </div>
+                            <div class="form-group col-md-6" id="registro-email">
+                                <label class="label-register" for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="example@gmail.com" required>
+                            </div>
+                            <div class="form-group col-md-6" id="registro-direccion">
+                                <label class="label-register" for="direccion">Dirección</label>
+                                <input type="text" id="direccion" name="direccion" class="form-control" placeholder="" required>
+                            </div>
+                            <div class="form-group col-md-6" id="registro-pais">
+                                <label class="label-register" for="pais">Pais</label>
+                                <select name="pais" id="pais" class="form-control" onchange="departamento()" required>
+                                    <option value="" selected disabled></option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6" id="registro-dept">
+                                <label class="label-register" for="dept">Departamento</label>
+                                <select name="dept" id="dept" class="form-control" disabled onchange="ciudad()" required>
+                                    <option value="" selected disabled></option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6" id="registro-dept">
+                                <label class="label-register" for="city">Cuidad</label>
+                                <select name="city" id="city" class="form-control" disabled  required>
+                                    <option value="" selected disabled></option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6" id="registro-fecha">
+                                <label class="label-register" for="fecha">Fecha de nacimiento</label>
+                                <input type="date" id="fecha" name="fecha" class="form-control" placeholder="" required>
+                            </div>
+                            <div class="form-group col-md-6" id="registro-sexo">
+                                <label class="label-register" for="sexo">Sexo</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sexo" id="masculino" value="M">
+                                    <label class="form-check-label label-register" for="masculino">Masculino</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sexo" id="femenino" value="F">
+                                    <label class="form-check-label label-register" for="femenino">Femenino</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-dark "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-person-plus" viewBox="0 2 16 16">
+                                <path
+                                d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                <path fill-rule="evenodd"
+                                d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                            </svg> Registrarse</button>
+                        </div>
+                    </form>
+                    <div class="col text-center">
+                        <a href="inicio.php" class="redirecciones">Iniciar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../jquery/jquery-3.6.0.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/lugar_nacimiento.js"></script>
